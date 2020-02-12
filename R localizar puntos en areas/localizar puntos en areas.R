@@ -11,7 +11,7 @@ zonas$poblacion <- zonas$SUMBLKPOP # poblacion de la zona postal
 zonas$logpob <- log(zonas$poblacion + 1) # logaritmo para mejor visualizacion
 plot(zonas["logpob"])
 
-# leer la base de clientes (n=8)
+# leer la base de clientes (n=8) - nombre, coordenadas (x_center ~ longitud, y_center ~ latitud)
 clientes <- read.csv("clientes.csv")
 
 # cual es el sistema de coordenadas [crs] del mapa?
